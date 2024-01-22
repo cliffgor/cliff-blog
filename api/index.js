@@ -4,7 +4,7 @@ import mongoose from 'mongoose';
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO).then(
+mongoose.connect(process.env.MONGO_URI).then(
     () => {
         console.log('Database connected');
     })
